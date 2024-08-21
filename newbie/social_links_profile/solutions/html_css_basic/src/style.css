@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* The :root pseudo-class represents the highest level in the DOM, typically the <html> element. Using :root allows you to define variables that can be accessed globally throughout your entire stylesheet. */
+:root {
+  --green: hsl(75, 94%, 57%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --grey-400: hsl(0, 0, 40%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --border-radius: 11px;
+}
+
+.my_profile {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* 100 % viewport height*/
+  background-color: var(--grey-900);
+  font-family: 'Inter', sans-serif;
+}
+
+.my_profile_center {
+  width: 25%;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--grey-800);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.my_profile_center img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 30%;
+  width: 30%;
+  border-radius: 50%;
+}
+
+.my_profile_center h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* background-color: hsl(hue, saturation%, lightness%); 
+hue: A degree on the color wheel (from 0 to 360). 0 (or 360) is red, 120 is green, and 240 is blue.
+saturation: A percentage value; 0% means a shade of gray, and 100% is the full color.
+lightness: A percentage value; 0% is black, 100% is white, and 50% is the normal color.
+*/
+
+.my_profile_center h4 {
+  font-size: 11px;
+  color: var(--green);
+  margin: 5px;
+}
+
+.my_profile_center p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.social_profile_buttons {
+  margin-bottom: 20px;
+}
+
+.my_profile_center button {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  border-width: 0;
+  border-radius: 8px;
+  background-color: var(--grey-700);
+}
+
+.my_profile_center button:hover {
+  background-color: grey;
+}
